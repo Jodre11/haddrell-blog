@@ -1,11 +1,12 @@
 // @ts-check
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
+import pagefind from 'astro-pagefind';
 import { defineConfig, fontProviders } from 'astro/config';
 
 export default defineConfig({
     site: 'https://www.haddrell.co.uk',
-    integrations: [mdx(), sitemap()],
+    integrations: [mdx(), sitemap(), pagefind()],
     fonts: [
         {
             provider: fontProviders.local(),
