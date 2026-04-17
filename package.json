@@ -15,6 +15,7 @@
     "@astrojs/mdx": "^5.0.3",
     "@astrojs/rss": "^4.0.18",
     "@astrojs/sitemap": "^3.7.2",
+    "@pagefind/default-ui": "^1.5.2",
     "astro": "^6.1.6",
     "markdown-it": "^14.1.1",
     "sanitize-html": "^2.17.3",
@@ -22,6 +23,8 @@
   },
   "devDependencies": {
     "@types/markdown-it": "^14.1.2",
-    "@types/sanitize-html": "^2.16.1"
+    "@types/sanitize-html": "^2.16.1",
+    "astro-pagefind": "^1.8.6",
+    "pagefind": "^1.5.2"
   }
 }
