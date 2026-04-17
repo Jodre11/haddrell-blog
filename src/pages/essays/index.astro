@@ -1,0 +1,19 @@
+---
+import Base from '../../layouts/Base.astro';
+import PostCard from '../../components/PostCard.astro';
+import { getEssays } from '../../lib/posts';
+const essays = await getEssays();
+---
+<Base title="Essays — Christian Haddrell" description="Essays on product engineering, agentic tooling, and judgement at the keyboard.">
+    <header class="page-header">
+        <h1>Essays</h1>
+        <p class="muted">Opinion, analysis, reflection.</p>
+    </header>
+    <section>
+        {essays.map((post) => <PostCard post={post} />)}
+        {essays.length === 0 && <p class="muted">No essays yet.</p>}
+    </section>
+</Base>
+<style>
+    .page-header { margin-bottom: 2rem; }
+</style>
