@@ -1,0 +1,45 @@
+---
+---
+<button id="theme-toggle" type="button" aria-label="Toggle theme" title="Toggle theme">
+    <span class="theme-icon" data-icon="auto" aria-hidden="true">A</span>
+    <span class="theme-icon" data-icon="light" aria-hidden="true">L</span>
+    <span class="theme-icon" data-icon="dark" aria-hidden="true">D</span>
+    <span class="sr-only">Toggle theme</span>
+</button>
+<style>
+    #theme-toggle {
+        border: 1px solid var(--hairline);
+        background: transparent;
+        color: var(--fg);
+        font-family: var(--font-mono), ui-monospace, monospace;
+        font-size: 0.8rem;
+        padding: 0.25rem 0.5rem;
+        cursor: pointer;
+        line-height: 1;
+    }
+    #theme-toggle:hover { border-color: var(--accent); color: var(--accent); }
+    .theme-icon { display: none; }
+    [data-theme-pref='auto']  .theme-icon[data-icon='auto']  { display: inline; }
+    [data-theme-pref='light'] .theme-icon[data-icon='light'] { display: inline; }
+    [data-theme-pref='dark']  .theme-icon[data-icon='dark']  { display: inline; }
+</style>
+<script is:inline>
+(function () {
+    const root = document.documentElement;
+    const pref = localStorage.getItem('theme-pref') || 'auto';
+    root.setAttribute('data-theme-pref', pref);
+    const btn = document.getElementById('theme-toggle');
+    if (!btn) return;
+    btn.addEventListener('click', () => {
+        const cur = root.getAttribute('data-theme-pref') || 'auto';
+        const next = cur === 'auto' ? 'light' : cur === 'light' ? 'dark' : 'auto';
+        localStorage.setItem('theme-pref', next);
+        root.setAttribute('data-theme-pref', next);
+        if (next === 'auto') {
+            root.removeAttribute('data-theme');
+        } else {
+            root.setAttribute('data-theme', next);
+        }
+    });
+})();
+</script>
