@@ -1,6 +1,17 @@
-# Blog deployment plan
+# Blog deployment plan — COMPLETE
 
-Pick up from here. Scaffolded with `npm create astro@latest` using the `blog`
+Deployed 2026-04-17. Site live at `https://www.haddrell.co.uk/`.
+
+DNS moved from GoDaddy (`ns75/76.domaincontrol.com`) to Cloudflare
+(`diva.ns.cloudflare.com`, `maciej.ns.cloudflare.com`). Cloudflare account:
+`christian@haddrell.co.uk` (personal, free plan). Worker:
+`haddrell-blog.christian-d5a.workers.dev`. DMARC record added (`p=none`).
+
+Original plan below for reference.
+
+---
+
+Scaffolded with `npm create astro@latest` using the `blog`
 template (TypeScript strict, git initialised). Deploy target: Cloudflare Pages
 on `www.haddrell.co.uk`. Apex `haddrell.co.uk` stays redirecting to LinkedIn.
 Email is untouched.
