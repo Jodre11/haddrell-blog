@@ -1929,28 +1929,28 @@ git commit -m "Set seed content draft state for launch"
 
 **Files:** none — deployment is governed by `PLAN.md` in repo root.
 
-- [ ] **Step 1: Read `PLAN.md`**
+- [x] **Step 1: Read `PLAN.md`**
 
 Confirm the 7-step deployment runbook is still accurate: push to GitHub, create Cloudflare Pages project, set build command `npm run build`, output directory `dist`, bind `www.haddrell.co.uk` domain, configure DNS CNAME via GoDaddy Domain Connect, verify.
 
-- [ ] **Step 2: Push branch**
+- [x] **Step 2: Push branch**
 
 ```bash
 git push -u origin main
 ```
 
-- [ ] **Step 3: Execute deployment runbook**
+- [x] **Step 3: Execute deployment runbook**
 
 Work through `PLAN.md` steps 1–7. No code changes; this is infra config via Cloudflare dashboard and GoDaddy.
 
-- [ ] **Step 4: Post-deploy smoke test**
+- [x] **Step 4: Post-deploy smoke test**
 
 Visit `https://www.haddrell.co.uk/` and spot-check the same list from Task 24 Step 3. Verify:
 - HTTPS served
 - Theme toggle works
 - RSS validates against live URL
 
-- [ ] **Step 5: Commit any last-mile adjustments if needed**
+- [x] **Step 5: Commit any last-mile adjustments if needed**
 
 ```bash
 git commit -am "Post-deploy fixes"
