@@ -1,0 +1,19 @@
+---
+import Base from '../../layouts/Base.astro';
+import PostCard from '../../components/PostCard.astro';
+import { getBuilds } from '../../lib/posts';
+const builds = await getBuilds();
+---
+<Base title="Builds — Christian Haddrell" description="Personal project write-ups. No client work ever appears here.">
+    <header class="page-header">
+        <h1>Builds</h1>
+        <p class="muted">Personal projects, numbered for continuity.</p>
+    </header>
+    <section>
+        {builds.map((post) => <PostCard post={post} />)}
+        {builds.length === 0 && <p class="muted">No builds yet.</p>}
+    </section>
+</Base>
+<style>
+    .page-header { margin-bottom: 2rem; }
+</style>
