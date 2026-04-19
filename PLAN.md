@@ -3,8 +3,7 @@
 Deployed 2026-04-17. Site live at `https://www.haddrell.co.uk/`.
 
 DNS moved from GoDaddy (`ns75/76.domaincontrol.com`) to Cloudflare
-(`diva.ns.cloudflare.com`, `maciej.ns.cloudflare.com`). Cloudflare account:
-`christian@haddrell.co.uk` (personal, free plan). Worker:
+(`diva.ns.cloudflare.com`, `maciej.ns.cloudflare.com`). Worker:
 `haddrell-blog.christian-d5a.workers.dev`. DMARC record added (`p=none`).
 
 Original plan below for reference.
@@ -71,9 +70,8 @@ Primary path:
    ```
 
 Fallback path if the Microsoft UI refuses arbitrary CNAMEs: try
-`sso.godaddy.com/` password reset against `christian@haddrell.co.uk` — a
-shadow GoDaddy account likely exists from Domain Connect provisioning. Edit
-via its DNS Management panel.
+`sso.godaddy.com/` password reset — a shadow GoDaddy account likely exists
+from Domain Connect provisioning. Edit via its DNS Management panel.
 
 ## Step 6 — Opportunistic while in the DNS panel: add DMARC
 
@@ -82,7 +80,7 @@ Same panel, add:
 ```
 Type:  TXT
 Host:  _dmarc
-Value: v=DMARC1; p=none; rua=mailto:christian@haddrell.co.uk; fo=1
+Value: v=DMARC1; p=none; rua=mailto:<your-email>; fo=1
 TTL:   default
 ```
 
