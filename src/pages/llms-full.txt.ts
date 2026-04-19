@@ -1,5 +1,5 @@
 import type { APIRoute } from 'astro';
-import { getAllPosts, isBuild } from '../lib/posts';
+import { getAllPosts, postHref } from '../lib/posts';
 import { SITE_URL, SITE_TITLE } from '../consts';
 
 export const GET: APIRoute = async () => {
@@ -8,10 +8,10 @@ export const GET: APIRoute = async () => {
     parts.push(`# ${SITE_TITLE} — full archive`);
     parts.push('');
     for (const p of posts) {
-        const path = isBuild(p) ? `/builds/${p.id}/` : `/essays/${p.id}/`;
+        parts.push(`<!-- POST: ${p.id} -->`);
         parts.push(`---`);
         parts.push(`title: ${JSON.stringify(p.data.title)}`);
-        parts.push(`url: ${SITE_URL}${path}`);
+        parts.push(`url: ${SITE_URL}${postHref(p)}`);
         parts.push(`pubDate: ${p.data.pubDate.toISOString()}`);
         parts.push(`tags: ${JSON.stringify(p.data.tags)}`);
         parts.push(`---`);

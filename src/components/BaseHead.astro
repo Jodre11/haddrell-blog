@@ -41,12 +41,12 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 <link rel="canonical" href={canonicalURL} />
 <meta name="generator" content={Astro.generator} />
 <Font cssVariable="--font-sans" preload />
-<Font cssVariable="--font-mono" />
+<Font cssVariable="--font-mono" preload />
 <title>{title}</title>
 <meta name="title" content={title} />
 <meta name="description" content={description} />
 <meta property="og:type" content={ogType} />
-<meta property="og:url" content={Astro.url} />
+<meta property="og:url" content={canonicalURL} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:site_name" content={SITE_TITLE} />
