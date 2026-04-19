@@ -32,7 +32,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
         if (pref === 'light' || pref === 'dark') {
             root.setAttribute('data-theme', pref);
         }
-    } catch (e) { /* ignore */ }
+    } catch { /* ignore */ }
 })();
 </script>
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
