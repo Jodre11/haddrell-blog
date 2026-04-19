@@ -23,6 +23,7 @@
         --bg: #111111;
         --fg: #e8e8e8;
         --fg-muted: #a0a0a0;
+        --accent: #fe0000;
         --hairline: rgba(232, 232, 232, 0.12);
         --code-bg: #1a1a1a;
     }
@@ -106,6 +107,7 @@ img { max-width: 100%; height: auto; }
 
 .muted { color: var(--fg-muted); }
 .mono { font-family: var(--font-mono), ui-monospace, monospace; }
+.page-header { margin-bottom: 2rem; }
 
 .sr-only {
     position: absolute;
