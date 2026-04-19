@@ -1,11 +1,11 @@
 ---
 import Base from '../../layouts/Base.astro';
 import PostCard from '../../components/PostCard.astro';
-import { getAllPosts, getAllTags } from '../../lib/posts';
+import { getAllPosts, getTagsFromPosts } from '../../lib/posts';
 
 export async function getStaticPaths() {
-    const tags = await getAllTags();
     const posts = await getAllPosts();
+    const tags = getTagsFromPosts(posts);
     return tags.map((tag) => ({
         params: { tag },
         props: { tag, posts: posts.filter((p) => p.data.tags.includes(tag)) },
@@ -22,6 +22,3 @@ const { tag, posts } = Astro.props;
         {posts.map((post) => <PostCard post={post} />)}
     </section>
 </Base>
-<style>
-    .page-header { margin-bottom: 2rem; }
-</style>

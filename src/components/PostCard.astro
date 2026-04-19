@@ -1,13 +1,12 @@
 ---
 import FormattedDate from './FormattedDate.astro';
-import { postHref, isBuild, type Post } from '../lib/posts';
+import Tag from './Tag.astro';
+import { formatBuildNumber, isBuild, postHref, type Post } from '../lib/posts';
 
 interface Props { post: Post }
 const { post } = Astro.props;
 const href = postHref(post);
-const prefix = isBuild(post) && post.data.number
-    ? `BUILD ${String(post.data.number).padStart(3, '0')}`
-    : null;
+const prefix = isBuild(post) ? `BUILD ${formatBuildNumber(post.data.number)}` : null;
 ---
 <article class="card">
     <a href={href}>
@@ -19,7 +18,7 @@ const prefix = isBuild(post) && post.data.number
         <p class="desc">{post.data.description}</p>
         {post.data.tags.length > 0 && (
             <p class="tags">
-                {post.data.tags.map((t) => <span class="tag">#{t}</span>)}
+                {post.data.tags.map((t) => <Tag tag={t} />)}
             </p>
         )}
     </a>
@@ -39,9 +38,4 @@ const prefix = isBuild(post) && post.data.number
     .title { margin: 0 0 0.25rem; font-size: 1.2rem; }
     .desc { margin: 0 0 0.4rem; color: var(--fg-muted); }
     .tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0; }
-    .tag {
-        font-family: var(--font-mono), ui-monospace, monospace;
-        font-size: 0.75rem;
-        color: var(--fg-muted);
-    }
 </style>

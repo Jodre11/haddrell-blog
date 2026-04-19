@@ -107,15 +107,15 @@ rather than shadows.
 
 - `/` — editorial homepage
 - `/essays/` — essay index
-- `/essays/<slug>` — essay detail
+- `/essays/<slug>/` — essay detail
 - `/builds/` — build index
-- `/builds/<NNN>-<slug>` — build detail
-- `/tags/<tag>` — tag index
-- `/about` — short about page
+- `/builds/<NNN>-<slug>/` — build detail
+- `/tags/<tag>/` — tag index
+- `/about/` — short about page
 - `/rss.xml` — feed
 - `/sitemap-index.xml` — sitemap
 - `/llms.txt`, `/llms-full.txt` — LLM-readable index
-- `/posts/<slug>.md` — Markdown companion for each post
+- `/essays/<slug>.md`, `/builds/<slug>.md` — Markdown companion for each post
 
 **Homepage structure (editorial index)**
 
@@ -159,8 +159,9 @@ parsed cleanly by LLM-driven crawlers and agentic readers.
 **`llms.txt`** — root-level index summarising the site, linking to key sections.
 **`llms-full.txt`** — concatenation of all posts in Markdown for one-shot ingestion.
 
-**Markdown companions** — every post is reachable at `/posts/<slug>.md` as raw
-Markdown, so agents can fetch clean content without HTML scraping.
+**Markdown companions** — every post is reachable at `/essays/<slug>.md` or
+`/builds/<slug>.md` as raw Markdown, so agents can fetch clean content without
+HTML scraping.
 
 **Structured data** — each post page includes `schema.org/BlogPosting` JSON-LD
 (headline, datePublished, dateModified, author, keywords, articleBody reference).

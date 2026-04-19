@@ -26,5 +26,6 @@ pnpm-debug.log*
 # superpowers brainstorming sessions
 .superpowers/
 
-# playwright CLI state
+# playwright CLI/MCP state
 .playwright-cli/
+.playwright-mcp/

@@ -6,6 +6,7 @@ import { defineConfig, fontProviders } from 'astro/config';
 
 export default defineConfig({
     site: 'https://www.haddrell.co.uk',
+    prefetch: { defaultStrategy: 'hover' },
     integrations: [mdx(), sitemap(), pagefind()],
     fonts: [
         {

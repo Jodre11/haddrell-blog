@@ -2,17 +2,21 @@
 import Base from '../layouts/Base.astro';
 import PostCard from '../components/PostCard.astro';
 import FormattedDate from '../components/FormattedDate.astro';
-import { getEssays, getBuilds, getAllTags, postHref } from '../lib/posts';
-import { SITE_DESCRIPTION } from '../consts';
+import Tag from '../components/Tag.astro';
+import { formatBuildNumber, getEssays, getBuilds, getTagsFromPosts, postHref } from '../lib/posts';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+
+const RECENT_ESSAY_COUNT = 6;
+const LATEST_BUILD_COUNT = 3;
 
 const essays = await getEssays();
 const builds = await getBuilds();
-const tags = await getAllTags();
-const featured = essays[0];
-const recent = essays.slice(1, 7);
-const latestBuilds = builds.slice(0, 3);
+const tags = getTagsFromPosts([...essays, ...builds]);
+const featured = essays.find((e) => e.data.featured) ?? essays[0];
+const recent = essays.filter((e) => e !== featured).slice(0, RECENT_ESSAY_COUNT);
+const latestBuilds = builds.slice(0, LATEST_BUILD_COUNT);
 ---
-<Base title="Christian Haddrell — Product engineering, with receipts" description={SITE_DESCRIPTION}>
+<Base title={`${SITE_TITLE} — ${SITE_DESCRIPTION}`} description={SITE_DESCRIPTION}>
     <section class="hero">
         <p class="mono eyebrow">Christian Haddrell</p>
         <h1>{SITE_DESCRIPTION}</h1>
@@ -35,7 +39,7 @@ const latestBuilds = builds.slice(0, 3);
         <section class="tags">
             <p class="mono eyebrow">Topics</p>
             <ul>
-                {tags.map((t) => <li><a href={`/tags/${t}/`}>#{t}</a></li>)}
+                {tags.map((t) => <li><Tag tag={t} /></li>)}
             </ul>
         </section>
     )}
@@ -54,7 +58,7 @@ const latestBuilds = builds.slice(0, 3);
                 {latestBuilds.map((b) => (
                     <li>
                         <a href={postHref(b)}>
-                            <span class="num mono">{String(b.data.number).padStart(3, '0')}</span>
+                            <span class="num mono">{formatBuildNumber(b.data.number)}</span>
                             <span class="title">{b.data.title}</span>
                         </a>
                     </li>
@@ -75,15 +79,6 @@ const latestBuilds = builds.slice(0, 3);
     .featured .lede { color: var(--fg-muted); max-width: 60ch; margin: 0 0 0.5rem; }
     .featured .meta { color: var(--fg-muted); font-size: 0.8rem; }
     .tags ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0; }
-    .tags li a {
-        font-family: var(--font-mono), ui-monospace, monospace;
-        font-size: 0.8rem;
-        color: var(--fg-muted);
-        text-decoration: none;
-        border: 1px solid var(--hairline);
-        padding: 0.15em 0.55em;
-    }
-    .tags li a:hover { color: var(--accent); border-color: var(--accent); }
     .recent, .builds { padding: 2rem 0; border-top: 1px solid var(--hairline); }
     .recent h2, .builds h2 { font-size: 0.9rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--fg-muted); }
     .build-list { list-style: none; padding: 0; margin: 0; }
