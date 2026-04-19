@@ -83,7 +83,6 @@ export const SITE_SHORT = 'Haddrell';
 export const SITE_DESCRIPTION = 'Product engineering, with receipts.';
 export const SITE_URL = 'https://www.haddrell.co.uk';
 export const AUTHOR_NAME = 'Christian Haddrell';
-export const AUTHOR_EMAIL = '***REMOVED-EMAIL***';
 export const PSC_NAME = 'Dougal Debug Limited';
 ```
 
@@ -1470,7 +1469,7 @@ git commit -m "Rewrite homepage as editorial index"
 ```astro
 ---
 import Base from '../layouts/Base.astro';
-import { AUTHOR_EMAIL, AUTHOR_NAME, PSC_NAME } from '../consts';
+import { AUTHOR_NAME, PSC_NAME } from '../consts';
 ---
 <Base title="About — Christian Haddrell" description="Senior product engineer. Agentic tooling early adopter. Freelancing through Dougal Debug Limited.">
     <h1>About</h1>
@@ -1485,7 +1484,7 @@ import { AUTHOR_EMAIL, AUTHOR_NAME, PSC_NAME } from '../consts';
         personal project or an anonymised observation.
     </p>
     <p>
-        Get in touch: <a href={`mailto:${AUTHOR_EMAIL}`}>{AUTHOR_EMAIL}</a>.
+        Find me on <a href="https://www.linkedin.com/in/christian-haddrell/">LinkedIn</a>.
     </p>
 </Base>
 ```
@@ -1983,7 +1982,7 @@ git push
 **Type consistency:**
 - `Post`, `Essay`, `Build` types defined in Task 5 step 2; used by Tasks 12, 13, 14, 15, 19, 20, 21.
 - `postHref`, `isBuild` helpers defined in Task 5 step 2; used by Tasks 12, 16, 19, 20, 21.
-- `SITE_TITLE`, `SITE_DESCRIPTION`, `SITE_URL`, `AUTHOR_NAME`, `AUTHOR_EMAIL`, `PSC_NAME` defined in Task 1 step 1; used by Tasks 8, 10, 11, 16, 17, 19, 20, 21.
+- `SITE_TITLE`, `SITE_DESCRIPTION`, `SITE_URL`, `AUTHOR_NAME`, `PSC_NAME` defined in Task 1 step 1; used by Tasks 8, 10, 11, 16, 17, 19, 20, 21.
 - Post layout `Props` interface (`title`, `description`, `pubDate`, `updatedDate`, `tags`, `kind`, `number`, `slug`) consistent between Task 11 definition and Tasks 13/14 consumers.
 - Theme data attribute: `data-theme-pref` (user setting) and `data-theme` (applied override) — used consistently by Tasks 3, 4, 8.
 - Font CSS variables: `--font-sans` and `--font-mono` — consistent across Tasks 2, 3, 8.
