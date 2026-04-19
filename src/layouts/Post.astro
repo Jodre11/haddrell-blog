@@ -59,7 +59,7 @@ const schemaJson = JSON.stringify(schema).replace(/</g, '\\u003c').replace(/\//g
             </p>
         </footer>
     </article>
-    <script type="application/ld+json" set:html={schemaJson} />
+    <script is:inline type="application/ld+json" set:html={schemaJson} />
 </Base>
 <style>
     .post-header .meta {
