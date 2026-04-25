@@ -3,7 +3,7 @@ import Base from './Base.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Tag from '../components/Tag.astro';
 import { absolutePostHref, formatBuildNumber, isBuild, markdownHref, type Post } from '../lib/posts';
-import { AUTHOR_NAME } from '../consts';
+import { blogPostingSchema, serializeJsonLd } from '../lib/schema';
 
 interface Props { post: Post }
 const { post } = Astro.props;
@@ -12,18 +12,14 @@ const url = absolutePostHref(post);
 const markdownUrl = markdownHref(post);
 const buildPrefix = isBuild(post) ? `BUILD ${formatBuildNumber(post.data.number)}` : null;
 
-const schema = {
-    '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
-    headline: title,
+const schemaJson = serializeJsonLd(blogPostingSchema({
+    title,
     description,
-    datePublished: pubDate.toISOString(),
-    dateModified: (updatedDate ?? pubDate).toISOString(),
-    author: { '@type': 'Person', name: AUTHOR_NAME },
-    keywords: tags.join(', '),
-    mainEntityOfPage: url,
-};
-const schemaJson = JSON.stringify(schema).replace(/</g, '\\u003c').replace(/\//g, '\\/');
+    url,
+    pubDate,
+    updatedDate,
+    tags,
+}));
 ---
 <Base
     title={title}

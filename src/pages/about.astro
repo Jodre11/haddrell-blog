@@ -1,6 +1,9 @@
 ---
 import Base from '../layouts/Base.astro';
 import { AUTHOR_NAME, PSC_NAME } from '../consts';
+import { personSchema, serializeJsonLd } from '../lib/schema';
+
+const schemaJson = serializeJsonLd(personSchema());
 ---
 <Base title="About — Christian Haddrell" description="Senior product engineer. Agentic tooling early adopter. Freelancing through Dougal Debug Limited.">
     <h1>About</h1>
@@ -17,4 +20,5 @@ import { AUTHOR_NAME, PSC_NAME } from '../consts';
     <p>
         Find me on <a href="https://www.linkedin.com/in/christian-haddrell/">LinkedIn</a>.
     </p>
+    <script is:inline type="application/ld+json" set:html={schemaJson} />
 </Base>
