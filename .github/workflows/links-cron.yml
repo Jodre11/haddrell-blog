@@ -29,6 +29,7 @@ jobs:
                       --max-retries 3
                       --retry-wait-time 10
                       --accept 200,429
+                      --root-dir ${{ github.workspace }}/dist
                       './dist/**/*.html'
                   fail: false
                   output: ./lychee-report.md
