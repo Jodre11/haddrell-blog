@@ -1,0 +1,42 @@
+name: Link check (full)
+
+on:
+    schedule:
+        - cron: '0 6 * * 1'  # Mondays 06:00 UTC
+    workflow_dispatch:
+
+jobs:
+    full-links:
+        runs-on: ubuntu-latest
+        permissions:
+            issues: write
+        steps:
+            - uses: actions/checkout@v4
+            - uses: actions/setup-node@v4
+              with:
+                  node-version: '22'
+                  cache: npm
+            - run: npm ci
+            - run: npm run build
+            # --accept 200,429: 429 responses are rate-limited hosts, not actually broken links
+            - name: Check all links (internal + external)
+              id: lychee
+              uses: lycheeverse/lychee-action@v2
+              with:
+                  args: >-
+                      --no-progress
+                      --include-fragments
+                      --max-retries 3
+                      --retry-wait-time 10
+                      --accept 200,429
+                      --root-dir ${{ github.workspace }}/dist
+                      './dist/**/*.html'
+                  fail: false
+                  output: ./lychee-report.md
+            - name: Open issue on failure
+              if: steps.lychee.outputs.exit_code != 0
+              uses: peter-evans/create-issue-from-file@v5
+              with:
+                  title: 'Broken links detected (weekly scan)'
+                  content-filepath: ./lychee-report.md
+                  labels: link-rot, automated

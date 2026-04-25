@@ -1,0 +1,4 @@
+# LinkedIn aggressively rate-limits non-browser User-Agents
+https://www\.linkedin\.com/.*
+# GitHub search queries return 429 from CI IPs
+https://github\.com/search\?.*
