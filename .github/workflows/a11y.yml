@@ -1,0 +1,31 @@
+name: Accessibility
+
+on:
+    pull_request:
+        paths:
+            - 'src/**'
+            - 'public/**'
+            - 'astro.config.mjs'
+            - 'package.json'
+            - 'package-lock.json'
+            - '.pa11yci.json'
+            - '.github/workflows/a11y.yml'
+
+jobs:
+    pa11y:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - uses: actions/setup-node@v4
+              with:
+                  node-version: '22'
+                  cache: npm
+            - run: npm ci
+            - run: npm run build
+            - name: Serve dist/
+              run: npx serve dist -p 4321 -L &
+            - name: Wait for server
+              run: npx wait-on http://localhost:4321/sitemap-index.xml --timeout 30000
+            - name: Run pa11y-ci against sitemap
+              # Sitemap URLs are absolute production URLs; rewrite them to the local server.
+              run: npx pa11y-ci --sitemap http://localhost:4321/sitemap-index.xml --sitemap-find "https://www.haddrell.co.uk" --sitemap-replace "http://localhost:4321" --config .pa11yci.json
