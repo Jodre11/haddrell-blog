@@ -4,6 +4,7 @@ import FormattedDate from '../components/FormattedDate.astro';
 import Tag from '../components/Tag.astro';
 import { absolutePostHref, formatBuildNumber, isBuild, markdownHref, type Post } from '../lib/posts';
 import { blogPostingSchema, serializeJsonLd } from '../lib/schema';
+import { SITE_URL } from '../consts';
 
 interface Props { post: Post }
 const { post } = Astro.props;
@@ -12,6 +13,9 @@ const url = absolutePostHref(post);
 const markdownUrl = markdownHref(post);
 const buildPrefix = isBuild(post) ? `BUILD ${formatBuildNumber(post.data.number)}` : null;
 
+const ogImagePath = `/og/${post.collection}/${post.id}.png`;
+const ogImageUrl = `${SITE_URL}${ogImagePath}`;
+
 const schemaJson = serializeJsonLd(blogPostingSchema({
     title,
     description,
@@ -19,12 +23,14 @@ const schemaJson = serializeJsonLd(blogPostingSchema({
     pubDate,
     updatedDate,
     tags,
+    imageUrl: ogImageUrl,
 }));
 ---
 <Base
     title={title}
     description={description}
     ogType="article"
+    ogImage={ogImagePath}
     publishedTime={pubDate}
     modifiedTime={updatedDate}
 >
