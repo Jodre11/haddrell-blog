@@ -5,6 +5,7 @@ import FormattedDate from '../components/FormattedDate.astro';
 import Tag from '../components/Tag.astro';
 import { formatBuildNumber, getEssays, getBuilds, getTagsFromPosts, postHref } from '../lib/posts';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import { serializeJsonLd, websiteSchema } from '../lib/schema';
 
 const RECENT_ESSAY_COUNT = 6;
 const LATEST_BUILD_COUNT = 3;
@@ -15,6 +16,8 @@ const tags = getTagsFromPosts([...essays, ...builds]);
 const featured = essays.find((e) => e.data.featured) ?? essays[0];
 const recent = essays.filter((e) => e !== featured).slice(0, RECENT_ESSAY_COUNT);
 const latestBuilds = builds.slice(0, LATEST_BUILD_COUNT);
+
+const schemaJson = serializeJsonLd(websiteSchema());
 ---
 <Base title={`${SITE_TITLE} — ${SITE_DESCRIPTION}`} description={SITE_DESCRIPTION}>
     <section class="hero">
@@ -67,6 +70,7 @@ const latestBuilds = builds.slice(0, LATEST_BUILD_COUNT);
             <p class="more"><a href="/builds/">All builds &rarr;</a></p>
         </section>
     )}
+    <script is:inline type="application/ld+json" set:html={schemaJson} />
 </Base>
 <style>
     .eyebrow { color: var(--fg-muted); font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; margin: 0 0 0.5rem; }
