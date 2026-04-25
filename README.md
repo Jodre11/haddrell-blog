@@ -27,3 +27,5 @@ Node.js 22.12+ is required (see `package.json`).
 
 - Design spec: `docs/superpowers/specs/2026-04-16-haddrell-blog-design.md`
 - Deployment context and active work log: `CONTEXT.md`, `PLAN.md`
+
+<!-- preview-url verification -->
