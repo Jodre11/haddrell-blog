@@ -3,15 +3,16 @@ name: Link check (internal)
 on:
     pull_request:
         paths:
-            - 'src/content/**'
-            - 'src/pages/**'
-            - 'src/layouts/**'
-            - 'src/components/**'
+            - 'src/**'
+            - 'public/**'
+            - 'astro.config.mjs'
             - '**/*.md'
 
 jobs:
     internal-links:
         runs-on: ubuntu-latest
+        permissions:
+            contents: read
         steps:
             - uses: actions/checkout@v4
             - uses: actions/setup-node@v4
