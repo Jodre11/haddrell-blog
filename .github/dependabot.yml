@@ -17,6 +17,10 @@ updates:
               update-types:
                   - minor
                   - patch
+      ignore:
+          # @astrojs/check 0.9.8 still pins typescript ^5.0.0; revisit when upstream widens its peer range.
+          - dependency-name: typescript
+            update-types: ['version-update:semver-major']
     - package-ecosystem: github-actions
       directory: /
       schedule:
