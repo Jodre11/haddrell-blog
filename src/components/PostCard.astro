@@ -9,24 +9,24 @@ const href = postHref(post);
 const prefix = isBuild(post) ? `BUILD ${formatBuildNumber(post.data.number)}` : null;
 ---
 <article class="card">
-    <a href={href}>
-        <div class="meta">
-            <FormattedDate date={post.data.pubDate} />
-            {prefix && <span class="num mono">{prefix}</span>}
-        </div>
-        <h3 class="title">{post.data.title}</h3>
-        <p class="desc">{post.data.description}</p>
-        {post.data.tags.length > 0 && (
-            <p class="tags">
-                {post.data.tags.map((t) => <Tag tag={t} />)}
-            </p>
-        )}
-    </a>
+    <div class="meta">
+        <FormattedDate date={post.data.pubDate} />
+        {prefix && <span class="num mono">{prefix}</span>}
+    </div>
+    <h3 class="title"><a href={href} class="title-link">{post.data.title}</a></h3>
+    <p class="desc">{post.data.description}</p>
+    {post.data.tags.length > 0 && (
+        <p class="tags">
+            {post.data.tags.map((t) => <Tag tag={t} />)}
+        </p>
+    )}
 </article>
 <style>
-    .card { padding: 1rem 0; border-bottom: 1px solid var(--hairline); }
-    .card a { display: block; text-decoration: none; color: inherit; }
-    .card:hover .title { color: var(--accent); }
+    .card {
+        padding: 1rem 0;
+        border-bottom: 1px solid var(--hairline);
+        position: relative;
+    }
     .meta {
         font-family: var(--font-mono), ui-monospace, monospace;
         font-size: 0.8rem;
@@ -36,6 +36,26 @@ const prefix = isBuild(post) ? `BUILD ${formatBuildNumber(post.data.number)}` : 
         margin-bottom: 0.25rem;
     }
     .title { margin: 0 0 0.25rem; font-size: 1.2rem; }
+    .title-link {
+        color: inherit;
+        text-decoration: none;
+    }
+    /* Stretch the title link to cover the whole card so it remains clickable,
+       but interactive children (tag links) sit above the overlay and stay reachable. */
+    .title-link::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+    }
+    .card:hover .title-link { color: var(--accent); }
     .desc { margin: 0 0 0.4rem; color: var(--fg-muted); }
-    .tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0; }
+    .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin: 0;
+        position: relative;
+        z-index: 1;
+    }
 </style>
