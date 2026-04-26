@@ -3,7 +3,7 @@
     --fg: #111111;
     --fg-muted: #555555;
     /* #fe0000 falls just below WCAG2AA 4.5:1 against #ffffff (4.03:1).
-       #d70000 clears 5.8:1 while preserving the brand-red feel. */
+       #d70000 clears ~5.4:1 while preserving the brand-red feel. */
     --accent: #d70000;
     --hairline: rgba(17, 17, 17, 0.10);
     --code-bg: #f4f4f4;
