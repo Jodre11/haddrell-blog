@@ -6,6 +6,9 @@ on:
             - 'src/**'
             - 'public/**'
             - 'astro.config.mjs'
+            - 'package.json'
+            - 'package-lock.json'
+            - '.lycheeignore'
             - '**/*.md'
 
 jobs:

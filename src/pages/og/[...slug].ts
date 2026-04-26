@@ -20,6 +20,8 @@ export const { getStaticPaths, GET } = await OGImageRoute({
     getImageOptions: (_path, page) => ({
         title: page.title,
         description: page.description,
+        // No `logo:` — astro-og-canvas's CanvasKit cannot decode SVG; favicon.svg silently fails.
+        // Add a raster favicon (e.g. /public/favicon.png) and reinstate `logo: { path, size }` if needed.
         border: { color: [255, 107, 0], width: 6, side: 'inline-start' },
         bgGradient: [[15, 15, 15], [30, 30, 30]],
         padding: 64,

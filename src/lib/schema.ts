@@ -1,7 +1,7 @@
 import type { BlogPosting, Person, PersonLeaf, WebSite, WithContext } from 'schema-dts';
 import { AUTHOR_NAME, SITE_DESCRIPTION, SITE_TITLE, SITE_URL } from '../consts';
 
-// PersonLeaf (not Person) so the `Patient | string` union doesn't break ...AUTHOR spreads (TS2698).
+// PersonLeaf (not Person) so the `Person | string` union doesn't break ...AUTHOR spreads (TS2698).
 const AUTHOR: PersonLeaf = {
     '@type': 'Person',
     name: AUTHOR_NAME,
