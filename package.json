@@ -35,9 +35,12 @@
     "astro-pagefind": "^1.8.6",
     "eslint": "^10.2.1",
     "eslint-plugin-astro": "^1.7.0",
+    "pa11y-ci": "^4.1.0",
     "pagefind": "^1.5.2",
     "schema-dts": "^2.0.0",
+    "serve": "^14.2.6",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.59.0"
+    "typescript-eslint": "^8.59.0",
+    "wait-on": "^9.0.5"
   }
 }
