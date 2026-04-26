@@ -29,3 +29,6 @@ pnpm-debug.log*
 # playwright CLI/MCP state
 .playwright-cli/
 .playwright-mcp/
+
+# Claude Code project state
+.claude/
