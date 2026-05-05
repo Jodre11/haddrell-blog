@@ -47,22 +47,25 @@ instead of two. Until then, current split is fine.
 
 ## Current DNS baseline (verified 2026-04-15)
 
-```
-A     @                         ***REMOVED-IP***, ***REMOVED-IP***  (AWS ELB → LinkedIn)
-A     www                       ***REMOVED-IP***                  (123-reg parking — will be replaced)
-MX    @                         ***REMOVED-MX***   (M365 Family)
-TXT   @                         v=spf1 include:outlook.com -all
-CNAME autodiscover              autodiscover.outlook.com
-CNAME _domainconnect            _domainconnect.ss.domaincontrol.com
-CNAME ***REMOVED-VERIFICATION***                  google.com                    (likely stale Search Console — investigate separately)
-TXT   _dmarc                    (empty — will be added in step 6)
-CNAME selector{1,2}._domainkey  (empty — DKIM unavailable, leave empty)
-```
+Specific record values intentionally not committed to this public repo. The
+shape of the zone (relevant to the plan):
+
+- Apex `A` records point at the LinkedIn redirect target.
+- `www` `A` record points at the registrar parking host (replaced in step 5).
+- `MX` is a `*.pamx1.hotmail.com` host (identifies M365 Family — see SKU
+  specifics above).
+- `TXT @` carries `v=spf1 include:outlook.com -all`.
+- `autodiscover` and `_domainconnect` CNAMEs point at standard Microsoft /
+  GoDaddy targets.
+- A legacy Google Search Console verification CNAME exists; status to be
+  reviewed separately.
+- `_dmarc` TXT empty until step 6.
+- `selector{1,2}._domainkey` CNAMEs empty (DKIM unavailable on this SKU).
 
 ## Stale items to investigate (low priority, not in PLAN.md)
 
-- `CNAME ***REMOVED-VERIFICATION*** → google.com` — confirm Search Console doesn't need
-  it, then remove.
+- The legacy Google Search Console verification CNAME — confirm Search
+  Console doesn't need it, then remove.
 - Whether apex LinkedIn redirect should move to a subdomain like
   `/linkedin` later (UX question, not technical).
 
