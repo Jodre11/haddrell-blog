@@ -158,8 +158,16 @@ removed without affecting the others.
 - **What:** Vitest test that globs `src/**/*.astro`, finds every
   occurrence of `set:html=`, and asserts each one matches a small
   explicit allowlist of known-safe usages. Today's allowlist:
-  - JSON-LD via `serializeJsonLd(...)` — used in `src/layouts/Post.astro`
-    and `src/pages/index.astro`.
+  - JSON-LD via `serializeJsonLd(...)` — used in `src/layouts/Post.astro`,
+    `src/pages/about.astro`, and `src/pages/index.astro`. The escape
+    helper has its own regression test (`src/lib/schema.test.ts`).
+  - SVG inlined via `<Fragment set:html={sized} />` in
+    `src/components/Dougal.astro` — `sized` is the project's own
+    `dougal.svg` (imported via Astro's `?raw`), regex-modified to
+    inject `width`/`height`/`class` from author-supplied props.
+    Build-time only; the only caller (`Footer.astro`) passes
+    `size={40}`. Safe because all inputs are author-controlled at
+    build time and the source SVG is in-repo.
 - **Where:** `src/lib/set-html-audit.test.ts`. Picked up by `npm test`.
 - **How a contributor adds a new safe usage:** edit the allowlist
   constant in the test file. The test reads as documentation of "every

@@ -271,7 +271,13 @@ git commit -m "Add _headers security invariants regression test"
 grep -rn 'set:html' src/
 ```
 
-Expected: two hits, both `set:html={schemaJson}` — one in `src/layouts/Post.astro`, one in `src/pages/index.astro`. If you see more, expand the allowlist in Step 2 to cover them (with a real `reason` string explaining why each one is safe).
+Expected: four hits across three patterns:
+1. `src/layouts/Post.astro` — `set:html={schemaJson}` (JSON-LD)
+2. `src/pages/about.astro` — `set:html={schemaJson}` (JSON-LD)
+3. `src/pages/index.astro` — `set:html={schemaJson}` (JSON-LD)
+4. `src/components/Dougal.astro` — `set:html={sized}` (build-time SVG inlining)
+
+If you see more or fewer than these four, STOP and report — the controller will need to expand the allowlist with new `reason` strings.
 
 - [ ] **Step 2: Write the failing test**
 
@@ -296,9 +302,19 @@ const ALLOWLIST: ReadonlyArray<{ file: string; match: string; reason: string }> 
         reason: 'JSON-LD via serializeJsonLd — escapes < and / before injection (see schema.test.ts)',
     },
     {
+        file: 'src/pages/about.astro',
+        match: 'set:html={schemaJson}',
+        reason: 'JSON-LD via serializeJsonLd — escapes < and / before injection (see schema.test.ts)',
+    },
+    {
         file: 'src/pages/index.astro',
         match: 'set:html={schemaJson}',
         reason: 'JSON-LD via serializeJsonLd — escapes < and / before injection (see schema.test.ts)',
+    },
+    {
+        file: 'src/components/Dougal.astro',
+        match: 'set:html={sized}',
+        reason: 'In-repo dougal.svg imported via ?raw, regex-modified with author-controlled build-time props (size, className) — no runtime user input',
     },
 ];
 
