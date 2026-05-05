@@ -133,6 +133,22 @@ removed without affecting the others.
 - **Threat coverage:** #6.
 - **Failure mode:** PR check fails. Author either upgrades, swaps, or
   documents an exception in the PR description.
+- **Prerequisite — vulnerability alerts must be enabled at the repo
+  level.** The action will fail with "Dependency review is not supported
+  on this repository" if the GitHub repo's vulnerability-alerts toggle
+  is off. This toggle is *not* part of `security_and_analysis` (the API
+  block we record under G1/G2) and defaults to on for public repos —
+  but if it has ever been disabled, the action fails. Verify with
+  `gh api /repos/<owner>/<repo>/vulnerability-alerts` (returns 204 if
+  enabled, 404 + "Vulnerability alerts are disabled." if not). Enable
+  with `gh api -X PUT /repos/<owner>/<repo>/vulnerability-alerts`.
+- **Companion setting — Dependabot security updates.** Once
+  vulnerability alerts is on, also enable
+  `security_and_analysis.dependabot_security_updates` so GitHub
+  auto-opens PRs to patch alerted vulns. Complementary to the existing
+  Dependabot version-update config and to G4: the action *prevents* a
+  contributor PR from introducing a vulnerable dep; this setting
+  *automatically opens* a PR to fix one once alerted.
 
 ### G5. `_headers` invariants test
 
