@@ -23,4 +23,8 @@
         --pagefind-ui-font: var(--font-sans), system-ui, sans-serif;
     }
     #search { max-width: var(--container); margin: 0 auto; }
+    /* Pagefind's bundled CSS sets background/border on the input but not color,
+       so the text falls back to the UA default (black) and disappears against
+       the dark theme background. Force it to follow the theme. */
+    .pagefind-ui__search-input { color: var(--pagefind-ui-text); }
 </style>
