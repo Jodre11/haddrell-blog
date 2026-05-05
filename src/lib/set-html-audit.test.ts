@@ -55,6 +55,11 @@ describe('set:html callsite audit', () => {
         for (const relativePath of walkAstroFiles(SRC_ROOT)) {
             const fullPath = join(SRC_ROOT, relativePath);
             const content = readFileSync(fullPath, 'utf-8');
+            // The regex stops at the first '}', so nested-brace expressions like
+            // set:html={fn({})} match only up to the inner '}'. The truncated match
+            // will not be on the allowlist — so the test fails (false positive)
+            // rather than letting the callsite through silently. If a legitimate
+            // nested-brace usage ever appears, swap this for a balanced-brace scan.
             const matches = content.matchAll(/\bset:html=\{[^}]+\}/g);
             const filePath = `src/${relativePath.replace(/\\/g, '/')}`;
 

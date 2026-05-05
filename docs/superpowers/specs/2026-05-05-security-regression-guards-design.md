@@ -211,13 +211,13 @@ itself is the guard. If that ever happens twice, revisit and add a
 | File | Action | Lines (approx.) |
 |---|---|---|
 | Repo settings (no file) | Enable G1, verify G2 | n/a |
-| `.github/workflows/codeql.yml` | New (G3) | ~30 |
-| `.github/workflows/ci.yml` | Add `dependency-review` job (G4) | +12 |
-| `src/lib/headers.test.ts` | New (G5) | ~40 |
-| `src/lib/set-html-audit.test.ts` | New (G6) | ~30 |
+| `.github/workflows/codeql.yml` | New (G3) | 23 |
+| `.github/workflows/ci.yml` | Add `dependency-review` job (G4) | +9 |
+| `src/lib/headers.test.ts` | New (G5) | 67 |
+| `src/lib/set-html-audit.test.ts` | New (G6) | 78 |
 | `docs/superpowers/specs/2026-05-05-security-regression-guards-design.md` | This file | — |
 
-Total new code: ~110 lines. No new dependencies (all guards use already-
+Total new code: ~177 lines. No new dependencies (all guards use already-
 installed `vitest` or GitHub-published actions).
 
 ## 8. Testing the guards themselves
