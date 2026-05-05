@@ -2,9 +2,8 @@
 
 Deployed 2026-04-17. Site live at `https://www.haddrell.co.uk/`.
 
-DNS moved from GoDaddy (`ns75/76.domaincontrol.com`) to Cloudflare
-(`diva.ns.cloudflare.com`, `maciej.ns.cloudflare.com`). Worker:
-`haddrell-blog.christian-d5a.workers.dev`. DMARC record added (`p=none`).
+DNS moved from GoDaddy to Cloudflare. Worker deployed behind
+`https://www.haddrell.co.uk`. DMARC record added (`p=none`).
 
 Original plan below for reference.
 
@@ -60,7 +59,7 @@ Primary path:
 1. account.microsoft.com → Services & subscriptions → Microsoft 365 Family →
    Manage → Premium features / Personalized email addresses → Manage domain →
    DNS records.
-2. Delete the existing `www A 94.136.40.82` record.
+2. Delete the existing `www A` record.
 3. Add:
    ```
    Type:   CNAME

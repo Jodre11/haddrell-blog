@@ -137,8 +137,9 @@ inline where they help).
    load-bearing — it explicitly disclaims commitment and prevents the
    section from reading as a public IOU.
 
-   *Out of scope for this stop:* DNS hygiene (the stale `24324387` CNAME and
-   the DMARC escalation plan) and the about-page sparseness. The first is
+   *Out of scope for this stop:* DNS hygiene (a stale Google Search Console
+   verification CNAME and the DMARC escalation plan) and the about-page
+   sparseness. The first is
    infra-level and not visible to a site reader; the second is intentional
    (LinkedIn carries the detail).
 

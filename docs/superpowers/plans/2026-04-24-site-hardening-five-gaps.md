@@ -60,7 +60,7 @@ If matches exist, Phase 1 becomes "add a `wrangler versions upload` step to the 
 - [ ] **Step 2: Enable Preview URLs in Cloudflare dashboard**
 
 User action (not scriptable):
-1. Log in to `dash.cloudflare.com` as `christian@haddrell.co.uk`
+1. Log in to `dash.cloudflare.com` as `<cloudflare-account-email>`
 2. Navigate: Workers & Pages → `haddrell-blog` → Settings → Builds → Preview URLs
 3. Toggle **Preview URLs** to **On**
 4. Under "Non-production branch behaviour", set to **Build all non-production branches**
@@ -84,7 +84,7 @@ gh pr create --title "chore: verify preview URLs" --body "One-line comment to te
 
 - [ ] **Step 4: Verify preview URL appears on PR**
 
-Expected: within 2-3 minutes, Cloudflare Workers Builds posts a comment on the PR containing a preview URL like `https://<hash>.haddrell-blog.christian-d5a.workers.dev`. Visit the URL — the site should render identically to production.
+Expected: within 2-3 minutes, Cloudflare Workers Builds posts a comment on the PR containing a preview URL like `https://<hash>.haddrell-blog.<account-slug>.workers.dev`. Visit the URL — the site should render identically to production.
 
 - [ ] **Step 5: Close verification PR without merging**
 

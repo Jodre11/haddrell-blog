@@ -1,4 +1,4 @@
-import type { BlogPosting, Person, PersonLeaf, WebSite, WithContext } from 'schema-dts';
+import type { BlogPosting, Person, PersonLeaf, Thing, WebSite, WithContext } from 'schema-dts';
 import { AUTHOR_NAME, SITE_DESCRIPTION, SITE_TITLE, SITE_URL } from '../consts';
 
 // PersonLeaf (not Person) so the `Person | string` union doesn't break ...AUTHOR spreads (TS2698).
@@ -52,6 +52,6 @@ export function blogPostingSchema(input: BlogPostingInput): WithContext<BlogPost
     };
 }
 
-export function serializeJsonLd(schema: object): string {
+export function serializeJsonLd<T extends Thing>(schema: WithContext<T>): string {
     return JSON.stringify(schema).replace(/</g, '\\u003c').replace(/\//g, '\\/');
 }
