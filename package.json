@@ -26,7 +26,10 @@
     "sharp": "^0.34.3"
   },
   "overrides": {
-    "yaml": "^2.8.3"
+    "yaml": "^2.8.3",
+    "lodash": "^4.18.0",
+    "postcss": "^8.5.10",
+    "fast-xml-parser": "^5.7.0"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.8",
