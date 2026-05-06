@@ -37,7 +37,7 @@ function walkAstroFiles(root: string): string[] {
     function walk(dir: string) {
         for (const entry of readdirSync(dir, { withFileTypes: true })) {
             const fullPath = join(dir, entry.name);
-            if (entry.isDirectory()) {
+            if (entry.isDirectory() && !entry.isSymbolicLink()) {
                 walk(fullPath);
             } else if (entry.name.endsWith('.astro')) {
                 results.push(relative(root, fullPath));
