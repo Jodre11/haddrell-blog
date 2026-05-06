@@ -126,6 +126,11 @@ removed without affecting the others.
   configured severity threshold.
 - **Where:** New job in existing `.github/workflows/ci.yml`, gated on
   `pull_request` event. Runs in parallel with the existing `build` job.
+- **Coverage gap:** because the job runs only on `pull_request`, a direct
+  push to `main` would bypass it entirely. Branch protection (squash-only
+  PR workflow, no direct pushes to `main`) is the load-bearing guard
+  here. If branch protection is ever relaxed, G4 stops working silently;
+  consider also marking the job as a required status check.
 - **Severity threshold:** `moderate`. Rationale: `low` is too noisy for
   a personal blog; `high`-only would let in `moderate`-rated XSS in dev
   dependencies. `moderate` is the project's effective bar for "do not

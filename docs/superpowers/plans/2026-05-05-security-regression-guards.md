@@ -116,7 +116,7 @@ rm -f scratch.txt
 
 - [ ] **Step 6: Note the result in the PR description draft**
 
-Keep a running scratch file at `/tmp/claude-fd84c4c2-76f5-4079-ba7f-2ab05ee557d5/pr-description.md` capturing before/after settings JSON, to paste into the PR body in Task 7.
+Keep a running scratch file at `${CLAUDE_TEMP_DIR}/pr-description.md` capturing before/after settings JSON, to paste into the PR body in Task 7.
 
 No commit — this task does not change any tracked file.
 
@@ -508,11 +508,11 @@ jobs:
             security-events: write
         steps:
             - uses: actions/checkout@v6
-            - uses: github/codeql-action/init@v3
+            - uses: github/codeql-action/init@v4
               with:
                   languages: javascript-typescript
                   queries: security-extended
-            - uses: github/codeql-action/analyze@v3
+            - uses: github/codeql-action/analyze@v4
               with:
                   category: '/language:javascript-typescript'
 ```
@@ -538,7 +538,7 @@ git commit -m "Add CodeQL workflow for JS/TS security analysis"
 
 ### Task 7: Push branch and open PR
 
-**Files:** none locally; PR draft is composed from the running notes in `/tmp/claude-fd84c4c2-76f5-4079-ba7f-2ab05ee557d5/pr-description.md`.
+**Files:** none locally; PR draft is composed from the running notes in `${CLAUDE_TEMP_DIR}/pr-description.md`.
 
 - [ ] **Step 1: Push the branch**
 
@@ -548,7 +548,7 @@ git push -u origin security/regression-guards
 
 - [ ] **Step 2: Compose PR description**
 
-Write to `/tmp/claude-fd84c4c2-76f5-4079-ba7f-2ab05ee557d5/pr-body.md` — include:
+Write to `${CLAUDE_TEMP_DIR}/pr-body.md` — include:
 
 - One-paragraph context (links spec doc, explains the lean-but-broad coverage stance).
 - A list of the six guards (G1–G6) with one-line summaries each.
@@ -562,7 +562,7 @@ gh pr create \
     --base main \
     --head security/regression-guards \
     --title "Add automated security regression guards (G1–G6)" \
-    --body-file /tmp/claude-fd84c4c2-76f5-4079-ba7f-2ab05ee557d5/pr-body.md
+    --body-file ${CLAUDE_TEMP_DIR}/pr-body.md
 ```
 
 Expected: PR URL printed. Capture it.
