@@ -83,4 +83,37 @@ than the fax machine's.
 In each case the new technology was real, and the response to it was
 framed by what it was replacing.
 
-<!-- Act 3 placeholder — Task 5 will fill this in. -->
+The wise were not wrong about the worry. They were applying
+yesterday's criteria, and the criteria were about to change.
+
+The next generation will find uses for these tools that we have not
+imagined, precisely because they are not held back by our frame. The
+work in front of us is not to shield them from the tooling but to
+equip them to be *good* at it. Agentic fluency — knowing when to
+delegate, how to specify, where to insist on reading the diff — is
+the engineering skill of their era. The job is teaching, not
+protection.
+
+This is not a claim that everyone moves up the abstraction stack. A
+real niche remains closer to the tin — compilers, kernels, embedded
+systems, the parts where the abstractions leak and somebody has to
+look underneath. That work does not disappear; it gets more
+specialised.
+
+The deeper question — what people do when the lever changes
+fundamentally — is older than agents and survives every transition;
+Keynes was already asking it in
+[*Economic Possibilities for our Grandchildren*](https://www.hetwebsite.net/het/texts/keynes/keynes1930grandchildren.htm)
+in 1930.
+
+There are real concerns. Security moves at machine speed now:
+vulnerabilities surface faster than humans can patch them, and the
+honest answer is to harness the same tools that are surfacing them.
+And [Geoffrey Hinton's Nobel banquet
+speech](https://www.nobelprize.org/prizes/physics/2024/hinton/speech/)
+calls explicitly for new research into how to keep more capable
+systems under control — fresh thinking applied to the new concern,
+not the old frame asking the old question.
+
+The solutions will be new, fresh, and worth doing — and they will
+come from the people who were never bound by yesterday's frames.
