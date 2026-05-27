@@ -40,8 +40,8 @@ Socrates, in [Plato's
 has Thamus refuse the gift of writing on the ground that it will
 "produce forgetfulness" in those who learn it, and that readers will
 "seem to know many things, when they are for the most part ignorant".
-Writing was scored on the criteria of memorisation and came up short,
-which is what happens when the old frame is the only frame to hand.
+Writing was scored on the criteria of memorisation, and came up
+short.
 
 In 1545, Conrad Gesner complained of the "confusing and harmful
 abundance of books" loosed on the learned world by the printing
@@ -77,8 +77,10 @@ that the Web would not amount to much:
 
 Three years later, Paul Krugman predicted in
 [*The Red Herring*](https://en.wikiquote.org/wiki/Paul_Krugman) that
-the Internet's economic impact would, by around 2005, prove no
-greater than the fax machine's. Both were measuring a new medium
-against the shape of the old.
+by around 2005 the Internet's economic impact would prove no greater
+than the fax machine's.
+
+In each case the new technology was real, and the response to it was
+framed by what it was replacing.
 
 <!-- Act 3 placeholder — Task 5 will fill this in. -->
