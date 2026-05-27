@@ -59,18 +59,23 @@ Working notes. Each source either VERIFIED with URL + exact quote, or flagged wi
 
 Three public-domain images sourced from Wikimedia Commons, ordered by essay beat. The 1990s-internet candidate was deliberately omitted: the spec already flagged it as likely-omitted, and no clean PD photograph of an early-Web artefact surfaced that earned its place over text alone.
 
+Note on figcaption pattern: the `Source: ... via Wikimedia Commons, public domain.` form below is a deliberate extension of the in-house figcaption pattern used in `src/content/builds/001-haddrell-from-scratch.md:97`, which is plain-descriptive because the author owns the image. Third-party PD images carry an attribution line as collection / provenance courtesy; do not "harmonise" by stripping the source credit when drafting the essay.
+
 ### Luddites
 - Local file: `public/the-old-frame-luddites.jpg`
 - Commons page: https://commons.wikimedia.org/wiki/File:Luddite.jpg
 - Direct image URL (original 6.09 MB, 3021×3988 px, downscaled locally to 894×1180 / 465 KB): https://upload.wikimedia.org/wikipedia/commons/7/73/Luddite.jpg
-- Licence: PD-1996 / Public Domain Mark 1.0. Author unknown; published May 1812 by Walker & Knight (British Museum cat. 1109.86). Clearly public domain by age.
-- Suggested figcaption attribution: *Source: "The Leader of the Luddites", anonymous hand-coloured etching (1812), via Wikimedia Commons, public domain.*
+- Licence: PD-1996 / Public Domain Mark 1.0. Author unknown; published May 1812 by Walker & Knight; held by the British Museum (registration no. 1990,1109.86). Clearly public domain by age.
+- Suggested alt: *"Hand-coloured 1812 etching of a figure in a long blue dress and feathered hat striding forward with a hammer, with frame-breakers and a burning mill in the background."*
+- Suggested figcaption attribution: *Source: "The Leader of the Luddites", anonymous hand-coloured etching (1812), British Museum, via Wikimedia Commons, public domain.*
 
 ### Printing press (Stradanus / Galle)
 - Local file: `public/the-old-frame-printing-press.jpg`
 - Commons page: https://commons.wikimedia.org/wiki/File:Impressio_Librorum_(BM_1948,0410.4.194).jpg
 - Direct image URL (original 1600×1290 / 567 KB, downscaled locally to 1100×886 / 413 KB): https://upload.wikimedia.org/wikipedia/commons/3/3f/Impressio_Librorum_%28BM_1948%2C0410.4.194%29.jpg
-- Licence: PD-scan (PD-old-70) and CC Public Domain Mark 1.0. After Jan van der Straet (Stradanus); published by Philips Galle, c.1580–1605, from *Nova Reperta*, plate 4 ("Impressio Librorum"). British Museum inv. 1948,0410.4.194.
+- Licence: PD-scan (PD-old-70) and CC Public Domain Mark 1.0. After Jan van der Straet (Stradanus); published by Philips Galle, c.1590 (BM record range c.1580–1605), from *Nova Reperta*, plate 4 ("Impressio Librorum"). British Museum inv. 1948,0410.4.194.
+- Note: British Museum metadata tags this digital file CC BY-NC-SA 4.0, but Commons treats faithful 2D reproductions of PD originals as ineligible for new copyright (Bridgeman v. Corel doctrine). No attribution legally required; the figcaption credits the BM as collection courtesy, not as licensor.
+- Suggested alt: *"16th-century engraving of a working print shop: compositors setting type at left, a pressman pulling a screw press at right, and a boy carrying away printed sheets."*
 - Suggested figcaption attribution: *Source: "Impressio Librorum" from Nova Reperta, after Jan van der Straet, published by Philips Galle (c.1590), British Museum, via Wikimedia Commons, public domain.*
 
 ### Socrates
@@ -78,6 +83,7 @@ Three public-domain images sourced from Wikimedia Commons, ordered by essay beat
 - Commons page: https://commons.wikimedia.org/wiki/File:Socrates_Pio-Clementino_Inv314.jpg
 - Direct image URL (original 1300×1740 / 1.5 MB, downscaled locally to 896×1200 / 367 KB): https://upload.wikimedia.org/wikipedia/commons/9/92/Socrates_Pio-Clementino_Inv314.jpg
 - Licence: PD-self — photograph released to the public domain by the photographer (Marie-Lan Nguyen / "Jastrow", 2006). Subject is a Roman marble copy of a Greek original (4th century BC), Museo Pio-Clementino, Vatican (inv. 314).
+- Suggested alt: *"Marble bust of an older bearded man with a broad flat nose and furrowed brow — Roman copy of a Greek portrait of Socrates."*
 - Suggested figcaption attribution: *Source: Bust of Socrates, Roman copy of a Greek original (4th c. BC), Museo Pio-Clementino, Vatican; photograph by Marie-Lan Nguyen (2006), via Wikimedia Commons, public domain.*
 
 ### Omitted: 1990s internet artefact
