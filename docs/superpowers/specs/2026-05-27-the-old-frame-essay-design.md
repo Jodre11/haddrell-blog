@@ -83,8 +83,8 @@ were about to change.
 
 Forward move:
 
-- Kids will find uses we haven't imagined; they're not held back by our
-  frame.
+- The next generation will find uses we haven't imagined; they're not
+  held back by our frame.
 - One-sentence Keynes nod (*Economic Possibilities for our Grandchildren*,
   1930) as evidence the "what will people do?" question is older than
   agents and survives.
