@@ -38,9 +38,15 @@ next generation, unencumbered by that frame, finds uses the establishment
 couldn't have imagined and solutions that don't look like anything that came
 before.
 
-The essay is positive in tone. It is not a dunk on the worried. It is a
-prompt to recognise the pattern and to invest in the new thinking that
-genuine concerns (security at machine speed; AI safety) actually require.
+The essay is positive in tone. It is not a dunk on the worried, and it
+is not "stop worrying". It is "the worry is partly right, but the
+*solution* is not to do what we used to do". The work is to equip the
+next generation to be good at the new tooling — agentic fluency is the
+engineering skill of their era — and to invest in the genuinely new
+thinking that real concerns (security at machine speed; AI safety) will
+require. A niche for closer-to-the-tin work (compilers, kernels,
+embedded, the parts where abstraction leaks) remains; the essay is not
+claiming everyone moves up the abstraction stack.
 
 ## Structure (~750 words target)
 
@@ -91,7 +97,12 @@ were about to change.
 Forward move:
 
 - The next generation will find uses we haven't imagined; they're not
-  held back by our frame.
+  held back by our frame. The work is to equip them to be *good* at this
+  tooling — agentic fluency is the engineering skill of their era. The
+  job is teaching, not protection.
+- A niche for closer-to-the-tin skills (compilers, kernels, embedded,
+  the parts where abstraction leaks) remains. The essay isn't claiming
+  everyone moves up the abstraction stack.
 - One-sentence Keynes nod (*Economic Possibilities for our Grandchildren*,
   1930) as evidence the "what will people do?" question is older than
   agents and survives.
