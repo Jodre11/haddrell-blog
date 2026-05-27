@@ -54,3 +54,31 @@ Working notes. Each source either VERIFIED with URL + exact quote, or flagged wi
 - URL: NYT resignation interview confirmed live at https://www.nytimes.com/2023/05/01/technology/ai-google-chatbot-engineer-quits-hinton.html (WebFetch blocked by NYT; URL exists per search and is widely cited). Nobel 2024 banquet speech at https://www.nobelprize.org/prizes/physics/2024/hinton/speech/ — fully accessible and quotable.
 - Key point to anchor: Hinton resigned from Google on 1 May 2023 to speak freely about AI risks. Co-recipient of 2024 Nobel Prize in Physics (with Hopfield) for foundational neural-network work. In his Nobel banquet speech: "Unfortunately, the rapid progress in AI comes with many short-term risks." And: "There is also a longer term existential threat that will arise when we create digital beings that are more intelligent than ourselves. We have no idea whether we can stay in control." And: "We urgently need research on how to prevent these new beings from wanting to take control."
 - Note for drafting: spec describes Hinton as "applying fresh thinking to AI safety, not retreating into the old frame". The Nobel speech is the cleanest quotable source — calls explicitly for *new research* into AI safety, which fits the essay's framing. Prefer the Nobel link as primary; mention NYT resignation as biographical context.
+
+## Images
+
+Three public-domain images sourced from Wikimedia Commons, ordered by essay beat. The 1990s-internet candidate was deliberately omitted: the spec already flagged it as likely-omitted, and no clean PD photograph of an early-Web artefact surfaced that earned its place over text alone.
+
+### Luddites
+- Local file: `public/the-old-frame-luddites.jpg`
+- Commons page: https://commons.wikimedia.org/wiki/File:Luddite.jpg
+- Direct image URL (original 6.09 MB, 3021×3988 px, downscaled locally to 894×1180 / 465 KB): https://upload.wikimedia.org/wikipedia/commons/7/73/Luddite.jpg
+- Licence: PD-1996 / Public Domain Mark 1.0. Author unknown; published May 1812 by Walker & Knight (British Museum cat. 1109.86). Clearly public domain by age.
+- Suggested figcaption attribution: *Source: "The Leader of the Luddites", anonymous hand-coloured etching (1812), via Wikimedia Commons, public domain.*
+
+### Printing press (Stradanus / Galle)
+- Local file: `public/the-old-frame-printing-press.jpg`
+- Commons page: https://commons.wikimedia.org/wiki/File:Impressio_Librorum_(BM_1948,0410.4.194).jpg
+- Direct image URL (original 1600×1290 / 567 KB, downscaled locally to 1100×886 / 413 KB): https://upload.wikimedia.org/wikipedia/commons/3/3f/Impressio_Librorum_%28BM_1948%2C0410.4.194%29.jpg
+- Licence: PD-scan (PD-old-70) and CC Public Domain Mark 1.0. After Jan van der Straet (Stradanus); published by Philips Galle, c.1580–1605, from *Nova Reperta*, plate 4 ("Impressio Librorum"). British Museum inv. 1948,0410.4.194.
+- Suggested figcaption attribution: *Source: "Impressio Librorum" from Nova Reperta, after Jan van der Straet, published by Philips Galle (c.1590), British Museum, via Wikimedia Commons, public domain.*
+
+### Socrates
+- Local file: `public/the-old-frame-socrates.jpg`
+- Commons page: https://commons.wikimedia.org/wiki/File:Socrates_Pio-Clementino_Inv314.jpg
+- Direct image URL (original 1300×1740 / 1.5 MB, downscaled locally to 896×1200 / 367 KB): https://upload.wikimedia.org/wikipedia/commons/9/92/Socrates_Pio-Clementino_Inv314.jpg
+- Licence: PD-self — photograph released to the public domain by the photographer (Marie-Lan Nguyen / "Jastrow", 2006). Subject is a Roman marble copy of a Greek original (4th century BC), Museo Pio-Clementino, Vatican (inv. 314).
+- Suggested figcaption attribution: *Source: Bust of Socrates, Roman copy of a Greek original (4th c. BC), Museo Pio-Clementino, Vatican; photograph by Marie-Lan Nguyen (2006), via Wikimedia Commons, public domain.*
+
+### Omitted: 1990s internet artefact
+- No download. Per spec guidance, this beat was de-prioritised and no clean PD candidate surfaced that earned its place. The Stoll *Newsweek* quote in the body text carries the period anchor without an image.
