@@ -13,13 +13,15 @@ Working notes. Each source either VERIFIED with URL + exact quote, or flagged wi
 - URL: https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0174%3Atext%3DPhaedrus%3Apage%3D275 (Fowler translation, Perseus Digital Library)
 - Exact quote (Thamus to Theuth, 275a-b): "they will read many things without instruction and will therefore seem to know many things, when they are for the most part ignorant" — and earlier, "you offer your pupils the appearance of wisdom, not true wisdom" — and "This invention will produce forgetfulness in the minds of those who learn to use it, because they will not practice their memory."
 - Note for drafting: spec's paraphrase "seem to know much while knowing nothing" is close to but not identical to the Fowler translation. Use the Fowler line "seem to know many things, when they are for the most part ignorant" if quoting directly.
+- Note: the three Thamus fragments above are NOT contiguous in Fowler — do not concatenate as a single blockquote.
 
 ## Gessner / print-overload
 - Status: VERIFIED
-- URL (Blair article hosting the quote): https://dash.harvard.edu/server/api/core/bitstreams/7312037c-6086-6bd4-e053-0100007fdf3b/content — Ann Blair, "Reading Strategies for Coping with Information Overload, ca. 1550-1700", *Journal of the History of Ideas*, 2003.
+- URL (Blair article — landing handle): https://nrs.harvard.edu/urn-3:HUL.InstRepos:3228379 — Harvard NRS persistent identifier for Ann Blair, "Reading Strategies for Coping with Information Overload, ca. 1550-1700", *Journal of the History of Ideas* 64.1 (2003), 11-28. (The handle is printed inside the PDF's first page and is the canonical citation.)
+- URL (Blair article — PDF bitstream): https://dash.harvard.edu/server/api/core/bitstreams/7312037c-6086-6bd4-e053-0100007fdf3b/content — PDF download; text extraction may fail in WebFetch (returns binary). Quote below is verified from the PDF itself.
 - Exact quote: Gesner "complained of that 'confusing and harmful abundance of books,' a problem which he called on kings and princes and the learned to solve." Primary citation Blair gives: Conrad Gesner, *Bibliotheca universalis* (Zurich, 1545), sig. *3V.
 - Scholarly anchor (Blair): *Too Much to Know: Managing Scholarly Information before the Modern Age*, Yale University Press, 2010. Yale UP page: https://yalebooks.yale.edu/book/9780300165395/too-much-to-know/
-- Note for drafting: Blair (and the primary citation) spell the name "Gesner" (one s). Spec uses "Gessner" (two s). Wikipedia / Brill use "Gessner" as the standard modern form. Pick one and stay consistent; Blair-quoting passages should use "Gesner" to match the citation.
+- Note for drafting: Essay uses "Gesner" (matches Blair, the citing scholar). Spec's "Gessner" (two s) is also a standard modern form but the citation chain — Blair's article and the 1545 primary — uses "Gesner".
 
 ## Luddites
 - Status: VERIFIED
@@ -39,7 +41,7 @@ Working notes. Each source either VERIFIED with URL + exact quote, or flagged wi
 - Status: VERIFIED
 - URL: https://en.wikiquote.org/wiki/Paul_Krugman (citation: "Why most economists' predictions are wrong", *The Red Herring*, June 1998); Quote Investigator long-form confirmation at https://quoteinvestigator.com/2023/10/26/internet-fax/
 - Exact quote: "The growth of the Internet will slow drastically, as the flaw in 'Metcalfe's law'... becomes apparent: most people have nothing to say to each other! By 2005 or so, it will become clear that the Internet's impact on the economy has been no greater than the fax machine's."
-- Note for drafting: the often-cited short form is the second sentence. Krugman himself later (2013) said the line was "fun and provocative, not... careful forecasting" — worth knowing but not necessarily worth including; it softens the rhetorical force.
+- Note for drafting: the often-cited short form is the second sentence. Do NOT include Krugman's 2013 walk-back ("fun and provocative, not... careful forecasting") in the essay — it undercuts Act 1's framing.
 
 ## Keynes 1930 — *Economic Possibilities for our Grandchildren*
 - Status: VERIFIED
