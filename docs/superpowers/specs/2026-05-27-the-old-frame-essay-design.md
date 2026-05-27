@@ -47,10 +47,17 @@ genuine concerns (security at machine speed; AI safety) actually require.
 ### Act 1 — The worry as voiced (~180 words)
 
 Open by naming the contemporary artefact: the LinkedIn-clickbait genre of
-"how will juniors learn to code if they're managing agents?" Concede that
-the worry sounds serious, comes from credentialed people, and reflects a
-real shift. Frame the move: this is the *establishment voice*, formed by
-yesterday's frame, asking yesterday's question.
+"how will juniors learn to code if they're managing agents?" Concede the
+worry has citable evidence behind it — Anthropic's own 2024 RCT (52
+mostly-junior engineers; AI-assisted developers scored 17 percentage
+points lower on comprehension and debugging quizzes) is the strongest
+single piece, made stronger because Anthropic itself published it.
+
+Then make the move: the *data* is real; the *interpretation* (juniors
+won't learn engineering) is the old frame applied to new tooling. The
+question is whether the skill being measured is the skill that will
+matter. The establishment voice, formed by yesterday's frame, is asking
+yesterday's question.
 
 ### Act 2 — The pattern (~370 words)
 
@@ -102,6 +109,9 @@ Forward move:
 Links to verify and include during the writing pass. If any source can't
 be substantiated, the surrounding claim is rewritten rather than fudged.
 
+- Anthropic, *How AI assistance impacts the formation of coding skills*
+  (2024) — `anthropic.com/research/AI-assistance-coding-skills`. The
+  load-bearing piece of evidence behind Act 1's worry.
 - Plato, *Phaedrus* — Perseus Digital Library translation, Theuth passage
   (274c–275b).
 - Ann Blair, *Too Much to Know* — Yale University Press page.
@@ -121,12 +131,24 @@ be substantiated, the surrounding claim is rewritten rather than fudged.
 
 ## Images
 
-One or two total, sourced from Wikimedia public-domain. More crowds the
-piece at this length.
+Two to four total, sourced from Wikimedia public-domain (or another
+clean-licence source). The essay is short, so each image needs to earn
+its place; a slideshow is not the goal.
 
-- A Gutenberg-era printing-press woodcut for the print-overload beat.
-- Optional second: a Luddite-era illustration if it strengthens that
-  beat.
+Candidate images, in priority order:
+
+- A Gutenberg-era printing-press woodcut — print-overload beat. Strong
+  public-domain availability.
+- A Luddite-era illustration of a power loom or the machine-breaking
+  itself — Luddite beat. Strong public-domain availability.
+- A bust or portrait of Socrates, or a *Phaedrus* manuscript leaf —
+  Socrates beat. Public-domain candidates exist on Wikimedia.
+- A 1990s-internet artefact (e.g. a period magazine cover or screenshot)
+  — internet beat. Hardest to source cleanly; likely omitted unless a
+  clear-licence option turns up.
+
+Final selection driven by what's actually available with a clean licence
+and a credible attribution. Two strong images beat four weak ones.
 
 Image handling matches build #001: PNG/JPG into `public/`, attribution
 in a `<figcaption>`, sized to sit inside the measure.
@@ -151,8 +173,6 @@ Matches build #001 (`001-haddrell-from-scratch.md`).
   one sentence in Act 3; a longer treatment is a separate piece.
 - A fifth historical example. Word budget can't carry it without
   thinning the existing four.
-- Per-post Open Graph image generation. Out of scope for the essay;
-  already on the site-follow-ups list from build #001.
 
 ## Open questions for the draft pass
 
