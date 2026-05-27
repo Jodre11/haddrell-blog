@@ -7,7 +7,7 @@ voice of any technological transition tends to misframe the new technology
 through the criteria of the old. The worry is rarely stupid; the *lens* is
 what's wrong. The pattern is illustrated through four historical cases, then
 pivoted to a positive close: real concerns about agentic tooling exist, but
-the solutions will come from people who didn't inherit yesterday's frame.
+the solutions will come from people who weren't bound by yesterday's frames.
 
 This essay is distinct from the existing placeholder `the-adoption-gap.md`,
 which is parked for a later post about competitive dynamics among current
@@ -94,7 +94,8 @@ Forward move:
   *applying* fresh thinking to AI safety, not retreating into the old
   frame.
 - Close: the solutions will be new, fresh, and exciting — and they'll
-  come from people who didn't inherit yesterday's lens. Positive landing.
+  come from people who weren't bound by yesterday's frames. Positive
+  landing.
 
 ## Sourcing
 
