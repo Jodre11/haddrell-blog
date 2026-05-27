@@ -1,6 +1,6 @@
 ---
 title: "The old frame"
-description: "TO BE WRITTEN — one line, replace before flipping draft to false."
+description: "When new tooling arrives, the establishment voice scores it on the old criteria. The frame that fits comes from those who never learnt the old one."
 pubDate: 2026-05-27
 tags: ["agentic-tools", "ai", "history"]
 draft: true
@@ -49,7 +49,7 @@ short.
         alt="Marble bust of an older bearded man with a broad flat nose and furrowed brow — Roman copy of a Greek portrait of Socrates."
         style="width:100%;height:auto;" />
     <figcaption style="margin-top:0.75rem;">
-        <em>Bust of Socrates, Roman marble copy of a Greek original (4th c. BC), Museo Pio-Clementino, Vatican.</em> Source: photograph by Marie-Lan Nguyen (2006), via <a href="https://commons.wikimedia.org/wiki/File:Socrates_Pio-Clementino_Inv314.jpg">Wikimedia Commons</a>, public domain.
+        <em>Bust of Socrates, Roman marble copy of a Greek original, 4th c. BC.</em> Source: photograph by Marie-Lan Nguyen (2006), via <a href="https://commons.wikimedia.org/wiki/File:Socrates_Pio-Clementino_Inv314.jpg">Wikimedia Commons</a>, public domain.
     </figcaption>
 </figure>
 
