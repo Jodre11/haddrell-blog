@@ -43,6 +43,16 @@ has Thamus refuse the gift of writing on the ground that it will
 Writing was scored on the criteria of memorisation, and came up
 short.
 
+<figure style="margin-left:0;margin-right:0;max-width:var(--max-measure);">
+    <img
+        src="/the-old-frame-socrates.jpg"
+        alt="Marble bust of an older bearded man with a broad flat nose and furrowed brow — Roman copy of a Greek portrait of Socrates."
+        style="width:100%;height:auto;" />
+    <figcaption style="margin-top:0.75rem;">
+        <em>Bust of Socrates, Roman marble copy of a Greek original (4th c. BC), Museo Pio-Clementino, Vatican.</em> Source: photograph by Marie-Lan Nguyen (2006), via <a href="https://commons.wikimedia.org/wiki/File:Socrates_Pio-Clementino_Inv314.jpg">Wikimedia Commons</a>, public domain.
+    </figcaption>
+</figure>
+
 In 1545, Conrad Gesner complained of the "confusing and harmful
 abundance of books" loosed on the learned world by the printing
 press, and called on princes and scholars to do something about it.
@@ -53,6 +63,16 @@ documents in detail. But the proposed move — resist the abundance,
 restore the old reading discipline — was the wrong lever. The
 response that mattered was a new reading practice, not a return to
 the old one.
+
+<figure style="margin-left:0;margin-right:0;max-width:var(--max-measure);">
+    <img
+        src="/the-old-frame-printing-press.jpg"
+        alt="16th-century engraving of a working print shop: compositors setting type at left, a pressman pulling a screw press at right, and a boy carrying away printed sheets."
+        style="width:100%;height:auto;" />
+    <figcaption style="margin-top:0.75rem;">
+        <em>"Impressio Librorum", from Nova Reperta, after Jan van der Straet, published by Philips Galle, c.1590.</em> Source: British Museum collection, via <a href="https://commons.wikimedia.org/wiki/File:Impressio_Librorum_(BM_1948,0410.4.194).jpg">Wikimedia Commons</a>, public domain.
+    </figcaption>
+</figure>
 
 The [Luddites](https://en.wikipedia.org/wiki/Luddite) are the careful
 case. The skilled framework knitters and croppers of 1811 were not
@@ -66,6 +86,16 @@ it was the one move that could not work. The new frame — labour
 organisation, universal schooling, eventually a different settlement
 between capital and worker — took most of the century to come into
 view, and none of it was visible from inside the trade being broken.
+
+<figure style="margin-left:0;margin-right:0;max-width:var(--max-measure);">
+    <img
+        src="/the-old-frame-luddites.jpg"
+        alt="Hand-coloured 1812 etching of a figure in a long blue dress and feathered hat striding forward with a hammer, with frame-breakers and a burning mill in the background."
+        style="width:100%;height:auto;" />
+    <figcaption style="margin-top:0.75rem;">
+        <em>"The Leader of the Luddites", anonymous hand-coloured etching, 1812.</em> Source: British Museum collection, via <a href="https://commons.wikimedia.org/wiki/File:Luddite.jpg">Wikimedia Commons</a>, public domain.
+    </figcaption>
+</figure>
 
 In February 1995, Clifford Stoll wrote in
 [*Newsweek*](https://www.newsweek.com/clifford-stoll-why-web-wont-be-nirvana-185306)
