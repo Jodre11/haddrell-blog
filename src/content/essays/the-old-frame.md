@@ -11,8 +11,8 @@ The genre is unmistakable by now. A senior engineer with a decade on
 their profile posts a short thread, often above a stock photograph of
 hands on a keyboard, asking how the next generation will ever learn to
 code if they spend their first years managing agents instead of
-writing the lines themselves. The replies agree. The lever has
-changed, the worry runs, and the craft will quietly empty out behind
+writing the code themselves. The replies agree. The lever has
+changed, the worry goes, and the craft will quietly empty out behind
 it.
 
 The worry is not baseless. [Anthropic's 2024 randomised
@@ -20,8 +20,8 @@ trial](https://www.anthropic.com/research/AI-assistance-coding-skills)
 took 52 software engineers, mostly junior, and split them into an
 AI-assisted group and a hand-coding group on the same task. The
 AI-assisted group scored 17 percentage points lower overall on a
-comprehension and debugging quiz afterwards — 50% against 67% — with
-the largest gap on the debugging questions. The numbers are real.
+comprehension and debugging quiz afterwards — 50% against 67%. The
+largest gap was on the debugging questions. The numbers are real.
 Time saved was negligible.
 
 What the genre then does with those numbers is the old frame. The
