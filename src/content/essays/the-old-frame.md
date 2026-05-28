@@ -9,9 +9,10 @@ featured: false
 
 The genre is unmistakable by now. A senior engineer with a decade on
 their profile posts a short thread, often above a stock photograph of
-hands on a keyboard, asking how the next generation will ever learn to
-code if they spend their first years managing agents instead of
-writing the code themselves. The replies agree. The lever has
+hands on a keyboard, asking [how the next generation will ever learn
+to code](https://www.google.com/search?q=site%3Alinkedin.com+%22how+will+juniors+learn%22+AI)
+if they spend their first years managing agents instead of writing the
+code themselves. The replies agree. The lever has
 changed, the worry goes, and the craft will quietly empty out behind
 it.
 
