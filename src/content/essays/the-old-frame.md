@@ -24,12 +24,9 @@ comprehension and debugging quiz afterwards — 50% against 67%. The
 largest gap was on the debugging questions. The numbers are real.
 Time saved was negligible.
 
-What the genre then does with those numbers is the old frame. The
-data is read as evidence that juniors using agents are not learning
-engineering, when what it actually shows is juniors using agents are
-not learning the engineering measured by yesterday's quiz. The
-establishment voice, formed by yesterday's frame, asks yesterday's
-question.
+The old frame is applied. The questions are classical; they test the
+established discipline. No wonder, then, that those who followed the
+classical path are measured favourably.
 
 When a transformative technology arrives, the established voices of
 the day misframe it through the criteria of the one it is replacing.
