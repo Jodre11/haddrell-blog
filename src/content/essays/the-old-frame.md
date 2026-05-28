@@ -78,7 +78,7 @@ technophobes; many were expert operators of the machines they later
 broke. They were right about the threat in front of them. Mechanised
 production really did destroy their trade, push wages down, and
 displace a generation of skilled labour into much worse work. The
-error was not in the worry. The error was in the lever. "Preserve
+concern was valid. The error was in the lever. "Preserve
 the existing industry" was the only move the old frame offered, and
 it was the one move that could not work. The new frame took most of
 the century to come into view: labour organisation, universal
