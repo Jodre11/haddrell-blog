@@ -141,5 +141,5 @@ calls explicitly for new research into how to keep more capable
 systems under control. That is the work of someone applying fresh
 thinking to a new problem, not flinching from it.
 
-The solutions will be new, and they will come from people who never
-learnt the old frame.
+The solutions will be new, and they will come from those young or
+nimble enough to think beyond the old frame.
