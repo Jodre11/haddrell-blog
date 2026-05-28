@@ -12,8 +12,8 @@ their profile posts a short thread, often above a stock photograph of
 hands on a keyboard, asking [how the next generation will ever learn
 to code](https://www.google.com/search?q=site%3Alinkedin.com+%22how+will+juniors+learn%22+AI)
 if they spend their first years managing agents instead of writing the
-code themselves. The replies agree. The lever has changed. The craft
-will quietly empty out behind it.
+code themselves. The replies agree. We will lose the craft, we are
+the last bastion of these skills.
 
 The worry is not baseless. [Anthropic's 2024 randomised
 trial](https://www.anthropic.com/research/AI-assistance-coding-skills)
