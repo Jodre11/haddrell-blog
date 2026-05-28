@@ -20,7 +20,7 @@ trial](https://www.anthropic.com/research/AI-assistance-coding-skills)
 took 52 software engineers, mostly junior, and split them into an
 AI-assisted group and a hand-coding group on the same task. The
 AI-assisted group scored 17 percentage points lower overall on a
-comprehension and debugging quiz afterwards — 50% against 67%. The
+comprehension and debugging quiz afterwards (50% against 67%). The
 largest gap was on the debugging questions. The numbers are real.
 Time saved was negligible.
 
@@ -41,7 +41,7 @@ short.
 <figure style="margin:1.5rem auto;max-width:34rem;">
     <img
         src="/the-old-frame-socrates.jpg"
-        alt="Marble bust of an older bearded man with a broad flat nose and furrowed brow — Roman copy of a Greek portrait of Socrates."
+        alt="Marble bust of an older bearded man with a broad flat nose and furrowed brow. Roman copy of a Greek portrait of Socrates."
         style="width:100%;height:auto;" />
     <figcaption style="margin-top:0.75rem;">
         <em>Bust of Socrates, Roman marble copy of a Greek original, 4th c. BC.</em> Source: photograph by Marie-Lan Nguyen (2006), via <a href="https://commons.wikimedia.org/wiki/File:Socrates_Pio-Clementino_Inv314.jpg">Wikimedia Commons</a>, public domain.
@@ -54,8 +54,8 @@ press, and called on princes and scholars to do something about it.
 The technology was real and the reading public was genuinely
 overwhelmed, as Ann Blair's [*Too Much to
 Know*](https://yalebooks.yale.edu/book/9780300165395/too-much-to-know/)
-documents in detail. But the proposed move — resist the abundance,
-restore the old reading discipline — was the wrong lever. The
+documents in detail. But the proposed move (resist the abundance,
+restore the old reading discipline) was the wrong lever. The
 response that mattered was a new reading practice, not a return to
 the old one.
 
@@ -77,10 +77,10 @@ production really did destroy their trade, push wages down, and
 displace a generation of skilled labour into much worse work. The
 error was not in the worry. The error was in the lever. "Preserve
 the existing industry" was the only move the old frame offered, and
-it was the one move that could not work. The new frame — labour
-organisation, universal schooling, eventually a different settlement
-between capital and worker — took most of the century to come into
-view, and none of it was visible from inside the trade being broken.
+it was the one move that could not work. The new frame took most of
+the century to come into view: labour organisation, universal
+schooling, eventually a different settlement between capital and
+worker. None of it was visible from inside the trade being broken.
 
 <figure style="margin:1.5rem auto;max-width:34rem;">
     <img
@@ -114,12 +114,12 @@ criteria, and the criteria were about to change.
 The next generation will find uses for these tools that we have not
 imagined, because they are not held back by our frame. The work in
 front of us is not to shield them from the tooling but to equip them
-to be *good* at it. Agentic fluency — knowing when to delegate, how
-to specify, where to insist on reading the diff — is the engineering
-skill of their era. The job is teaching, not protection.
+to be *good* at it. Agentic fluency is the engineering skill of their
+era: knowing when to delegate, how to specify, where to insist on
+reading the diff. The job is teaching, not protection.
 
 This is not a claim that everyone moves up the abstraction stack. A
-real niche remains closer to the tin — compilers, kernels, embedded
+real niche remains closer to the tin: compilers, kernels, embedded
 systems, the parts where the abstractions leak and somebody has to
 look underneath. That work does not disappear; it gets more
 specialised.
