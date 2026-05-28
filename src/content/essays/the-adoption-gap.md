@@ -1,5 +1,5 @@
 ---
-title: "The adoption gap"
+title: "The Adoption Gap"
 description: "Why senior engineers who adopt agentic tooling early will out-ship those who don't — and why the gap will widen."
 pubDate: 2026-04-16
 tags: ["agentic-tools", "process"]

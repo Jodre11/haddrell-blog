@@ -64,6 +64,7 @@ const schemaJson = serializeJsonLd(blogPostingSchema({
     <script is:inline type="application/ld+json" set:html={schemaJson} />
 </Base>
 <style>
+    article { max-width: var(--max-measure); margin-left: auto; margin-right: auto; }
     .post-header .meta {
         font-family: var(--font-mono), ui-monospace, monospace;
         color: var(--fg-muted);
