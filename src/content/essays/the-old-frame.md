@@ -104,9 +104,10 @@ that the Web would not amount to much:
 > network will change the way government works.
 
 Three years later, Paul Krugman predicted in
-[*The Red Herring*](https://en.wikiquote.org/wiki/Paul_Krugman) that
-by around 2005 the Internet's economic impact would prove no greater
-than the fax machine's.
+[*The Red Herring*](https://en.wikiquote.org/wiki/Paul_Krugman):
+
+> By 2005 or so, it will become clear that the Internet's impact on
+> the economy has been no greater than the fax machine's.
 
 In each case the new technology was real, and the response to it was
 framed by what it was replacing.
