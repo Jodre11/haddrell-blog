@@ -27,9 +27,11 @@ Time saved was negligible.
 
 The old frame is applied. The questions are classical; they test the
 established discipline. No wonder, then, that those who followed the
-classical path are measured favourably. When a transformative
-technology arrives, it is measured from the perspective of the
-historical methodology. The pattern is older than any single example.
+classical path are measured favourably.
+
+When a transformative technology arrives, it is measured from the
+perspective of the historical methodology. The pattern is older than
+any single example.
 
 Socrates, in [Plato's
 *Phaedrus*](https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0174%3Atext%3DPhaedrus%3Apage%3D275),
