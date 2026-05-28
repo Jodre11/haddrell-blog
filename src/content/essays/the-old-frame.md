@@ -57,7 +57,7 @@ press, and called on princes and scholars to act.
 The technology was real and the reading public was genuinely
 overwhelmed, as Ann Blair's [*Too Much to
 Know*](https://yalebooks.yale.edu/book/9780300165395/too-much-to-know/)
-documents in detail. But the proposed move (resist the abundance,
+documents in detail. The proposed move (resist the abundance,
 restore the old reading discipline) was the wrong lever. The
 response that mattered was a new reading practice, not a return to
 the old one.
