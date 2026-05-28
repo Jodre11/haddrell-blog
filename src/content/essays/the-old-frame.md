@@ -108,8 +108,8 @@ than the fax machine's.
 In each case the new technology was real, and the response to it was
 framed by what it was replacing.
 
-The wise were not wrong about the worry. They were applying
-yesterday's criteria, and the criteria were about to change.
+The wise were not wrong to worry, but they were applying yesterday's
+criteria, and the criteria were about to change.
 
 The next generation will find uses for these tools that we have not
 imagined, because they are not held back by our frame. The work in
