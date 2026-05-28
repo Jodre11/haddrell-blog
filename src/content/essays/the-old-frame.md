@@ -112,10 +112,9 @@ In each case the new technology was real, and the response to it was
 framed by what it was replacing.
 
 The wise were not wrong to worry, but they were applying yesterday's
-criteria, and the criteria were about to change.
-
-The next generation will find uses for these tools that we have not
-imagined, because they are not held back by our frame. The work in
+criteria, and the criteria were about to change. The next generation
+will find uses for these tools that we have not imagined, because
+they are not held back by our frame. The work in
 front of us is not to shield them from the tooling but to equip them
 to be *good* at it. Agentic fluency is the engineering skill of their
 era: knowing when to delegate, how to specify, where to insist on
