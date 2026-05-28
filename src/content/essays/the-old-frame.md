@@ -3,7 +3,7 @@ title: "The Old Frame"
 description: "Every new technology gets marked against established criteria, through the lens of the past. Always with hindsight, we see the old frame remade."
 pubDate: 2026-05-27
 tags: ["agentic-tools", "ai", "history"]
-draft: true
+draft: false
 featured: false
 ---
 
