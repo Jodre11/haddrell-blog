@@ -132,7 +132,8 @@ survives every lever change since, and arrives at this one intact.
 
 Real concerns remain. Security now moves at machine speed:
 vulnerabilities surface faster than humans can patch them, and the
-honest answer is to harness the same tools that are surfacing them.
+honest answer is yes — we may have to work harder, but we can make
+new, better tools to help us.
 
 [Geoffrey Hinton's Nobel banquet
 speech](https://www.nobelprize.org/prizes/physics/2024/hinton/speech/)
