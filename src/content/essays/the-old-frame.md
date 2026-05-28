@@ -51,7 +51,7 @@ short.
 
 In 1545, Conrad Gesner complained of the "confusing and harmful
 abundance of books" loosed on the learned world by the printing
-press, and called on princes and scholars to do something about it.
+press, and called on princes and scholars to act.
 The technology was real and the reading public was genuinely
 overwhelmed, as Ann Blair's [*Too Much to
 Know*](https://yalebooks.yale.edu/book/9780300165395/too-much-to-know/)
