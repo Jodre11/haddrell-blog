@@ -1,6 +1,6 @@
 ---
-title: "The old frame"
-description: "When new tooling arrives, the establishment voice scores it on the old criteria. The frame that fits comes from those who never learnt the old one."
+title: "The Old Frame"
+description: "Every new technology gets marked against the old criteria. The frame that fits comes from those who never learnt the old one."
 pubDate: 2026-05-27
 tags: ["agentic-tools", "ai", "history"]
 draft: true

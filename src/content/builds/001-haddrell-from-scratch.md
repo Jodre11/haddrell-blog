@@ -1,5 +1,5 @@
 ---
-title: "Haddrell from scratch"
+title: "Haddrell from Scratch"
 description: "Building this site with agentic tools — what was decided, in the order it happened."
 pubDate: 2026-04-16
 number: 1
